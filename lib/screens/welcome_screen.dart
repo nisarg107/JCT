@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:jct/screens/staff/branch_login.dart';
+import 'package:jct/screens/staff/complaints_screen.dart';
 import 'package:jct/screens/user/login/signin_screen.dart';
 import 'package:jct/screens/user/login/signup_screen.dart';
 
@@ -88,7 +89,7 @@ class WelcomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const BranchLogin(),
+                    builder: (context) => const ComplaintsScreen(),
                   ),
                 );
               },

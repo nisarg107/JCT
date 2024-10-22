@@ -48,7 +48,6 @@ class DetailedPage extends StatelessWidget {
                 fontSize: 18,
               ),
             ),
-            //upload image here
             const SizedBox(height: 16),
             const Text(
               'Selected Category:',
@@ -76,6 +75,81 @@ class DetailedPage extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 18,
               ),
+            ),
+            const SizedBox(
+                height: 32), // Adding space between details and containers
+            Column(
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    // Add logic for "Working on Complaint" action
+                    print('Working on: ${complaintItem.title}');
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(
+                            'Marked as working on: ${complaintItem.title}'),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.blueAccent,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.build, color: Colors.white),
+                        SizedBox(width: 8),
+                        Text(
+                          'Working on Complaint',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20), // Space between containers
+                GestureDetector(
+                  onTap: () {
+                    // Add logic for "Solved the Complaint" action
+                    print('Solved: ${complaintItem.title}');
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content:
+                            Text('Marked as solved: ${complaintItem.title}'),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.check, color: Colors.white),
+                        SizedBox(width: 8),
+                        Text(
+                          'Solved the Complaint',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

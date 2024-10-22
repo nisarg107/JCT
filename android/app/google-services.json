@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "597306534586",
-    "project_id": "jct-forked",
-    "storage_bucket": "jct-forked.appspot.com"
+    "project_number": "856465934662",
+    "project_id": "jctapp-67571",
+    "storage_bucket": "jctapp-67571.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:597306534586:android:3f729788b71c256eaff083",
+        "mobilesdk_app_id": "1:856465934662:android:30b1663d4be77ea03bfd47",
         "android_client_info": {
           "package_name": "com.example.jct"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAyh6QwHlccQ2Q4jyHNQlFEyu7h-lu3Clk"
+          "current_key": "AIzaSyDDemus1uhB9tvzSntQDnC0U8yiZOIbJfQ"
         }
       ],
       "services": {

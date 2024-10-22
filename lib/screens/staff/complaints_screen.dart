@@ -95,7 +95,6 @@ class _ComplaintsScreenState extends State<ComplaintsScreen> {
   }
 
   Future<void> _refreshData() async {
-    // Reload the data here, for example:
     _loadItems();
   }
 
